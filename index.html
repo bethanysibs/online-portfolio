@@ -142,9 +142,9 @@
   <script>
     // Sample projects data
     const projects = [
-      { title: "Guess the Number", desc: "A simple game where the user has to guess a number between 1 and 20." , link: "https://github.com/bethanysibala/guess-the-number", tech_stack: "HTML, CSS, JavaScript"},
-      { title: "Project 2", desc: "A fun project with JavaScript interactivity." , link: "https://github.com/bethanysibala/project-2", tech_stack: "HTML, CSS, JavaScript"},
-      { title: "Project 3", desc: "Another cool project I worked on." , link: "https://github.com/bethanysibala/project-3", tech_stack: "HTML, CSS, JavaScript"}
+      { title: "Guess the Number", desc: "A simple game where the user has to guess a number between 1 and 20." , link: "https://bethanysibs.github.io/guessThatNumber/", tech_stack: "HTML, CSS, JavaScript"},
+      { title: "Project 2", desc: "A fun project with JavaScript interactivity." , link: "https://bethanysibala.github.io/project-2/", tech_stack: "HTML, CSS, JavaScript"},
+      { title: "Project 3", desc: "Another cool project I worked on." , link: "https://bethanysibala.github.io/project-3/", tech_stack: "HTML, CSS, JavaScript"}
     ];
 
     // Dynamically add projects to the page
@@ -153,9 +153,8 @@
       const card = document.createElement("div");
       card.className = "card";
       card.innerHTML = `<h3>${p.title}</h3><p>${p.desc}</p>
-                        <button onclick="alert('Opening ${p.title}...')">View Project</button>
-                        <p>${p.tech_stack}</p>
-                        <a href="${p.link}" target="_blank">View Project</a>`;
+                        <button href="${p.link}" target="_blank">View Project</button>
+                        <p>${p.tech_stack}</p>`;
       container.appendChild(card);
     });
   </script>
