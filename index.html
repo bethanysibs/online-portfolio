@@ -142,9 +142,9 @@
   <script>
     // Sample projects data
     const projects = [
-      { title: "Project 1", desc: "My first project using HTML and CSS." },
-      { title: "Project 2", desc: "A fun project with JavaScript interactivity." },
-      { title: "Project 3", desc: "Another cool project I worked on." }
+      { title: "Guess the Number", desc: "A simple game where the user has to guess a number between 1 and 100." , link: "https://github.com/bethanysibala/guess-the-number"},
+      { title: "Project 2", desc: "A fun project with JavaScript interactivity." , link: "https://github.com/bethanysibala/project-2"},
+      { title: "Project 3", desc: "Another cool project I worked on." , link: "https://github.com/bethanysibala/project-3"}
     ];
 
     // Dynamically add projects to the page
@@ -153,7 +153,8 @@
       const card = document.createElement("div");
       card.className = "card";
       card.innerHTML = `<h3>${p.title}</h3><p>${p.desc}</p>
-                        <button onclick="alert('Opening ${p.title}...')">View Project</button>`;
+                        <button onclick="alert('Opening ${p.title}...')">View Project</button>
+                        <a href="${p.link}" target="_blank">View Project</a>`;
       container.appendChild(card);
     });
   </script>
